@@ -1,0 +1,307 @@
+
+
+@media screen and (min-width: 1400px) {
+    .container{
+        max-width: 1158px !important;
+    }
+}
+@media screen and (max-width: 1025px){
+    .small-section{
+        width: 25%;
+    }
+    .big-section {
+        float: right;
+        width: 75%;
+    }
+    .about-image{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        margin-right: 55px;
+    }
+    .service-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .post{
+        gap: 7px;
+        padding: 3px 5px;
+        margin-left: 20px;
+    }
+    .blog-content h5{
+        font-size: 15px;
+    }
+    .blog-content p {
+        font-size: 14px;
+    }
+    .profolio-item{
+        padding: 0 10px !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .overlay{
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        background-color: #000;
+        transition: all .3s linear;
+    }
+    #portfolio .button{
+        font-size: 13px;
+    }
+    .header-logo{
+        width: 100%;
+        text-align: start;
+    }
+    .active .overlay{
+        opacity: .5;
+        visibility: visible;
+        z-index: 8;
+    }
+    .big-section{
+        width: 100%;
+    }
+    .small-section{
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+        min-height: 65px;
+        z-index: 9;
+        position: relative;
+    }
+    .header-logo h1{
+        color: #000;
+        margin: 0;
+    }
+    .full-content{
+        flex-direction: column;
+    }
+    .menu-section {
+        display: flex;
+        justify-content: space-between;
+        height: 62px;
+        width: 100%;
+        position: inherit;
+        overflow: unset;
+        align-items: center;
+    }
+    .social-icon, .header-logo{
+        position: inherit;
+        height: 64px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar{
+        background-color: #fff !important; 
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        max-height: 0;
+        overflow-y: hidden;
+        display: block;
+    }
+    .navbar.show{
+        max-height: 500px;
+        top: 60px;
+    }
+    .nav-menu{
+        width: 100%;
+    }
+    .nav-menu li{
+        border-bottom: 1px dotted #ddd;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    .nav-menu a{
+        color: #000 !important;
+    }
+    .contact-section p, .blog-detail p, .testimonals p, #service .text-center p {
+        width: 80%;
+    }
+    .testimonals{
+        padding-bottom: 90px;
+    }
+    #service{
+        padding-bottom: 0;
+    }
+    .post {
+        gap: 7px;
+        padding: 5px 20px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .nav-menu a{
+        text-align: start !important;
+        width: 100%;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 15px 0;
+        z-index: 1;
+        padding-top: 10px;
+        width: fit-content;
+        padding-bottom: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(7px) rotate(45deg) ;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-9px) rotate(-45deg) ;
+    }
+    .bar{
+        display: inline-block;
+        color: #000;
+        margin: 3px;
+    }
+    .mobile-nav{
+        max-height: 0;
+        transition: all .3s linear;
+    }
+    .mobile-nav.show{
+        max-height: 500px;
+        position: relative;
+    }
+    .mobile-nav li{
+        border-bottom: 1px solid #ddd;
+    }
+    .change-word{
+        display: flex;
+        flex-direction: column;
+        height: 96px;
+    }
+    .change-word h2{
+        font-size: 40px;
+    }
+    .banner-content p{
+        padding-top: 0;
+        width: 80%;
+    }
+    .banner-content, .banner{
+        height: 95vh;
+    }
+}
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 769px) {
+    .banner {
+        height: 60vh;
+    }
+    .banner-content {
+        height: 60vh;
+    }
+    div#contact {
+        padding-bottom: 35px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner-content p{
+        width: 75%;
+    }
+    #portfolio .button-group {
+        padding-top: 20px;
+    }
+    .post{
+        gap: 24px;
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width:500px){
+	.container{
+		max-width: 692px !important;
+	}
+    .banner-content, .banner{
+        height: 86vh;
+    }
+    .banner-content p{
+        padding-bottom: 15px;
+    }
+    .banner-content h5 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .blog-content h5 {
+        font-size: 20px;
+    }
+    .blog-content p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contact-section p, .blog-detail p, .testimonals p, #service .text-center p, .banner-content p{
+        width: 100%;
+        font-size: 19px;
+    }
+    .banner-content h2{
+        font-size: 40px;
+    }
+    .banner{
+        height: 61vh;
+    }
+    .small-section {
+        padding: 0;
+        min-height: 50px;
+    }
+    .banner-content {
+        height: 57vh;
+    }
+    .change-word{
+        height: 95px;
+    }
+    .banner-content .btn, .freelancer .btn, #contact .text-center input{
+        padding: 7px 16px;
+        font-size: 17px;
+    }
+    .freelancer h2, .topic-headding{
+        font-size: 35px;
+    }   
+    .te-item p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .testimonals {
+        padding-bottom: 90px;
+    }
+    .header-logo h1 {
+        font-size: 22px;
+    }
+    .project-name{
+        font-size: 13px;
+    }
+    .post {
+        gap: 35px;
+    }
+    .service-info p, #about p, .banner-content p{
+        font-size: 20px;
+    }
+    .banner-content h5{
+        font-size: 27px;
+    }
+    .about-image{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 376px){
+    .contact-section p, .blog-detail p, .testimonals p, #service .text-center p, .banner-content p{
+        font-size: 16px;
+    }
+}
