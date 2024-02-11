@@ -33,7 +33,7 @@ jQuery(function ($){
     const typedTextSpan = $(".typed-text");
     const cursorSpan = $(".cursor");
   
-    const textArray = ["Designer", "Programmer", "Photographer", "José Smith"];
+    const textArray = ["Designer", "Programmer", "Photographer", "Alish Pawn"];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000;
