@@ -29,6 +29,7 @@ body {
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 .h1, .h2, .h3, .h4, .h5,
 .h6, h1, h2, h3, h4, h5, h6 {
@@ -477,7 +478,7 @@ li{
 }
 .header-logo .logo img{
     width: 150px;
-  height: auto;
+  height: 150px;
   border-radius: 100px;
 }
 .header-logo h1{
