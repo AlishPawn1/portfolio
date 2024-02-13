@@ -8,7 +8,7 @@
     --dark-color: #000;
     --light-gray: rgb(249 249 249 / 73%);
     --light-white: #f5f5f5;
-    --gray-l-color: #666666; 
+    --gray-l-color: #666666;
 
     --primary-fonts: 'Nunito Sans', sans-serif;
     --secondary-fonts: 'Poppins', sans-serif;
@@ -539,8 +539,23 @@ li{
 }
 /* banner */
 .banner{
-    background: url(image/banner-.jpg) 50% /  cover;
+    background-image: url(image/bg.jpg);
     height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
 }
 .banner-content{
     height: 100vh;
@@ -629,6 +644,13 @@ li{
     margin-top: 10px;
     font-weight: 700;
 }
+.about-img-1::after, .about-img-2::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
 .about-img-2{
     position: absolute;
     width: 40%;
@@ -636,6 +658,10 @@ li{
     right: -8%;
     bottom: -10%;
     z-index: 1;
+}
+.about-img-2 img{
+    height: 100%;
+    width: 100%;
 }
 /* service */
 .service-info h4{
@@ -853,6 +879,12 @@ li{
 footer{
     padding: 24px 0;
     color: #fff;
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: var(--secondary-color);
 }
 #button.show {
     opacity: 1;
